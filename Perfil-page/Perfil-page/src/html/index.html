@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="../assets/img/icon.png">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Pedro Fernandes</title>
+</head>
+<body>
+    <div id="home"></div>
+    <div id="app">
+        <nav class="navbar navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="">
+                <img src="../assets/img/icon.png" width="50" height="30" alt="unb-icon">
+            </a>
+            
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#carreira">Carreira</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#espectativas">Espectativas</a></li>
+                <li><a href="table.html">Tabela</a></li>
+            </ul>
+        </nav>
+        <div class="perfil">
+            <div id="perfil" class="perfil-container">
+                <div class="perfil-data">
+                    <h1>Pedro Fernandes</h1>
+                    <p><i class="fa fa-envelope mr-3"></i><span>pedrofernandesspark@gmail.com</span></p>
+                    <p><i class="fa fa-phone mr-3"></i><span>(61) 99395-5999</span></p>
+                    <div class="perfil-icons  mt-5">
+                        <a href="https://www.instagram.com/pedro_fernandes_spark/"><img src="../assets/img/instagram.png" alt="instagram-icon"></a>
+                        <a href="https://www.linkedin.com/in/pedro-fernandes-998160187/"><img src="../assets/img/linkedin.png" alt="linkedin-icon"></a>
+                        <a href="https://github.com/PedroFernandesSpark"><img src="../assets/img/part+1+github-1320568339880199515.png" alt="github-icon"></a>
+                    </div>
+                </div>
+                <div class="perfil-photo-container" id="circle">
+                    <div class="perfil-photo"><img id="photo" alt="perfil-photo" src="../assets/img/perfil.png"></div>
+                </div>
+            </div>
+        </div>
+        <div id="sobre"></div>
+        <br />
+        <div class="about-me">
+            <br />
+            <br />
+            <br />
+            <div class="text-data mb-5">
+                <h1 class="mb-5">Sobre Mim</h1>
+                <p>"Nascido em Patos de Minas/MG, mudei-me para Brasília por conta da faculdade. Estou cursando Engenharia da Computação na Universidade de Brasília desde 2018/2. Escolhi a área de TI quando, no segundo ano, descobri minha paixão pela programação quando aprendia o básico de Unity 3D"</p>
+            </div>
+            <div class="knowledge">
+                <perfil-knowledges v-for="knowledge in knowledges" :name="knowledge"></perfil-knowledges>
+            </div>
+        </div>
+        <div id="carreira"></div>
+        <br />
+        <br />
+        <div class="i-do mb-5" id="">
+            <h1 class="mt-0 mb-5">O que faço</h1>
+            <div class="i-do-container mt-5">
+                <what-i-do img="../assets/img/front.png" title="Frontend">
+                    Sempre me dei melhor com a parte gráfica, a interação visual com o usuário e sua experiência, assim, o frontend é minha expecialidade quando se trata de desenvolvimento web.
+                </what-i-do>
+                <what-i-do img="../assets/img/web.png" title="Web Develop">
+                    Com a expreriência de 2 anos como desenvolvedor na CJR, já realizei diversas aplicações para o mercado, sempre focando na maior qualidade e melhor experiência de usuário.
+                </what-i-do>
+                <what-i-do img="../assets/img/game.png" title="Game Develop">
+                    Meu primeiro passo na computação foi na área de desenvolvimento de games, games são uma paixão, ainda estou no processo de aprendizado de Unity 5.
+            </div>
+        </div>
+
+        <div class="education mb-0 mt-0 pt-0">
+            <h1>Cursos</h1>
+            <br />
+            <div class="inst-container mt-5">
+                <my-education img="../assets/img/icon.png" link="https://www.unb.br/" name="Engenharia de Computação">2018 - 2023</my-education>
+                <my-education img="../assets/img/images.jpg" link="http://www.atclanguageschools.com/" name="Intercâmbio 4 semanas Irlânda">2019 - 2019</my-education>
+                <my-education img="../assets/img/cjr-logo.png" link="https://mkacademy.art.br/cursos/" name="Desenvolvedor Web em CJR">2018 - 2020</my-education>
+            </div>
+        </div>
+        <div id="hobbies"></div>
+        <br />
+        <div class="hobbies-container mt-4" id="">
+            <div class="hobbies mt-0">
+                <h1 class="mb-5">Hobbies</h1>
+                <p class="mb-5">
+                    “Poder trazer ao mundo imagens e ideias que minha imaginação gerava sempre foi algo que eu quis aprender, então, aproveitando a quarentena e o tempo confinado em casa desenvolvi o hobby de desenhar. Estou apenas começando o processo de aprendizado, agora em outubro comecei a fazer um desenho por dia, alguns deles me agradaram muito”
+                </p>
+
+                <div class="carousel-container mt-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../assets/img/1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../assets/img/2.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="../assets/img/3.png" alt="Third slide">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="espectativas"></div>
+
+        <div class="future">
+            <img src="../assets/img/future.jpg">
+            <div class="text">
+                <h4 class="mb-4">Expectativas para o futuro</h4>
+                <p>"Espero estar morando sozinho até a metade de 2021. Em tempos como esses o futuro se torna cada vez mais imprevisível, porém eu tenho boas expectativas. Pretendo me formar em 2023  já com uma situação estável com condições de me dedicar ao meu sonho, me tornar Perito da Polícia Federal."</p>
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <p class="mb-0 ml-3">
+                © 2020 Copyright:
+                <a href="https://www.linkedin.com/in/pedro-fernandes-998160187/">Pedro Fernandes</a>
+            </p>
+        </div>
+    </div>
+
+
+    <script type="text/x-template" id="i-do">
+        <div class="card-container">
+            <div class="card card-do" style="width: 18rem;">
+                <img class="card-img-top" :src="img" alt="Card-img">
+                <div class="card-body">
+                    <h5 class="card-title">{{title}}</h5>
+                    <p class="card-text"><slot></slot></p>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/x-template" id="education">
+        
+            <div class="card">
+                <div class="card-body education-body">
+                    <h5 class="card-title"><a class="school-link mr-3" :href="link"><img :src="img" /></a><p>{{name}}</p></h5>
+                    <p class="card-text"><slot></slot></p>
+                </div>
+            </div>
+    </script>
+
+
+    <script src="../assets/script/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

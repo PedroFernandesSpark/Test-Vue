@@ -1,0 +1,19 @@
+.table-container{
+    display:flex;
+    flex-flow: column;
+    justify-content:center;
+    align-items:center;
+    width: 80%;
+    margin: auto;
+}
+.table-container h5{
+    font-size: 1.2rem;
+    align-self:start;
+    background-color: rgb(221, 221, 221);
+    padding: 1.5%;
+    width: 100%;
+}
+th {
+    border-top: none !important;
+}
+
