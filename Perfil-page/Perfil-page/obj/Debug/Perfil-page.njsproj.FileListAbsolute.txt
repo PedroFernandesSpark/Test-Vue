@@ -1,0 +1,3 @@
+C:\Users\Pedro Spark Fernande\Desktop\Estagio\Test-Vue\Perfil-page\Perfil-page\obj\Debug\Perfil-page.njsprojAssemblyReference.cache
+C:\Users\Pedro Spark Fernande\Desktop\Estagio\Test-Vue\Perfil-page\Perfil-page\obj\Debug\Perfil-page.njsproj.CoreCompileInputs.cache
+C:\Users\Pedro Spark Fernande\Desktop\Estagio\Test-Vue\Perfil-page\Perfil-page\bin\Microsoft.NodejsTools.WebRole.dll
